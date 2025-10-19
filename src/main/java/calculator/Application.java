@@ -14,7 +14,10 @@ public class Application {
             int num = Integer.valueOf(input);
             return num;
         } else{
-            return 0;
+            String del = String.valueOf(input.charAt(2));
+            input.replace(del,"");
+            int num = Integer.valueOf(input);
+            return num;
         }
     }
 
